@@ -1,0 +1,201 @@
+html, body {
+    margin: 0;
+}
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+
+    
+}
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+.menu {
+    width: 15%;
+    background-color: #fff;
+    padding: 10px 20px;
+    
+}
+.menu ul {
+    position: sticky;
+    top: 20px;
+    padding: 0;
+
+    font-size: 1.5em;
+    list-style: none;
+    
+}
+.menu ul li {
+    margin-bottom: 15px;
+    
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #01549E;
+}
+
+.header {
+    background-color: #01549E;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2.2em;
+    min-height: 150px;
+}
+.content {
+    background-color: white;
+    min-height: 300px;
+    
+}
+#about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+#about-us > div {
+     padding: 10px 20px;
+}
+#about-us h2 {
+    font-size: 2.3em;
+    color: #01549E;
+}
+.about-img img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+#services {
+    color: #01549E;
+}
+#services h1 {
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+
+}
+#services .service-item {
+    padding: 0 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+#services h4 { 
+    font-size: 1.3em;
+}
+#services p {
+    color: #558CEB;
+}
+#schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.schedule h1 {
+    color: #01549E;
+    font-size: 2em;
+}
+table {
+    text-align: center;
+}
+table thead {
+    background-color: #01549E;
+    color: #fff;
+}
+table tbody tr:nth-child(even){
+    background-color: #ccc;
+}
+table tbody tr td:first-child {
+    text-align: left;
+} 
+
+.footer {
+    background-color: #01549E;
+    color: #fff;
+    min-height: 150px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 1fr 20px;
+}
+
+.footer-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frame-map {
+    grid-row-start: 2;
+    grid-column-end: 3;
+    padding: 15px;
+}
+.footer-form {
+    grid-row-start: 2;
+    grid-column-end: 2;
+
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 30px;
+
+}
+.footer-form form input {
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.footer-form form button {
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer-form div {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: self-start;
+}
+.footer-form div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    gap: 40px;
+}
+
+.footer-form .btn-enviar {
+    background-color: #008000;
+    color: #fff;
+}
+.footer-form .btn-limpar {
+    background-color: transparent;
+    color: #ff0000;
+    border: 1px solid currentColor;
+}
+.footer-rights {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
